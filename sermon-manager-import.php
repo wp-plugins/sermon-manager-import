@@ -1,16 +1,18 @@
 <?php
 /**
+ *
+ *
  * @package   Sermon Manager Import
  * @author    Kyle Hornberg
  * @license   GPLv3
  * @link      https://github.com/khornberg/sermon-manager-import
- * @copyright 2013 Kyle Hornberg
+ * @copyright 2013-2015 Kyle Hornberg
  *
- * @wordpress-plugin 
+ * @wordpress-plugin
  * Plugin Name: Sermon Manager Import
  * Plugin URI: https://github.com/khornberg/sermon-manager-import
  * Description: Imports sermons into <a href="https://bitbucket.org/wpforchurch/sermon-manager-for-wordpress" target="blank">Sermon Manger for Wordpress</a> using ID3 information.
- * Version: 0.2.3
+ * Version: 0.2.4
  * Author: Kyle Hornberg
  * Author URI: https://github.com/khornberg
  * Author Email:
@@ -19,7 +21,7 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Domain Path: /languages
  *
- * Copyright 2013
+ * Copyright 2013-2015
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License, version 3, as
@@ -34,7 +36,7 @@
  *   along with this program; if not, write to the Free Software
  *   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
-*/
+ */
 
 
 
@@ -44,7 +46,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 require_once plugin_dir_path( __FILE__ ) . 'views/options.php';
-require_once( plugin_dir_path( __FILE__ ) . 'class-sermon-manager-import.php' );
+require_once plugin_dir_path( __FILE__ ) . 'class-sermon-manager-import.php';
 
 // Register hooks that are fired when the plugin is activated or deactivated.
 // When the plugin is deleted, the uninstall.php file is loaded.
